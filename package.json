@@ -1,6 +1,6 @@
 {
-  "author": "Iván Loire <ivan@iloire.com> (http://iloire.com/)",
-  "name": "watchmen",
+  "author": "Kritarth",
+  "name": "Monitor",
   "scripts": {
     "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000",
     "postcoverage": "kill `cat test/redis.pid`",
@@ -11,10 +11,10 @@
   },
   "description": "A simple service monitor",
   "version": "3.3.1",
-  "homepage": "http://letsnode.com",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/iloire/watchmen.git"
+    "url": "git://github.com/kupadhy/watchmen.git"
   },
   "engines": {
     "node": ">=0.10"
