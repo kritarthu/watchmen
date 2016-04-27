@@ -77,7 +77,7 @@ module.exports.getRoutes = function (storage) {
 
   router.post('/services/:id', requireAdmin, function (req, res) {
     req.body.header = JSON.parse(req.body.header)
-    req.body.post = JSON.parse(req.body.post)
+    req.body.post = JSON.parse(req.body.form)
 
     var id = req.params.id;
     if (!id) {
