@@ -29,6 +29,7 @@ module.exports.getRoutes = function (storage) {
 
   router.post('/services', requireAdmin, function (req, res) {
     req.body.header = JSON.parse(req.body.header)
+    req.body.post = JSON.parse(req.body.form)
 
     var service = req.body;
     var errors = serviceValidator.validate(service);
@@ -76,6 +77,8 @@ module.exports.getRoutes = function (storage) {
 
   router.post('/services/:id', requireAdmin, function (req, res) {
     req.body.header = JSON.parse(req.body.header)
+    req.body.post = JSON.parse(req.body.post)
+
     var id = req.params.id;
     if (!id) {
       return res.status(404).json({error: 'ID parameter not found'});
@@ -152,6 +155,8 @@ module.exports.getRoutes = function (storage) {
         return res.status(404).json({error: 'Service not found'});
       }
       service.header = JSON.stringify(service.header)
+      service.post = JSON.stringify(service.post)
+
       res.json(service);
     });
   });

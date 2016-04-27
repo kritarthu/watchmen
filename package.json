@@ -56,7 +56,8 @@
     "watchmen-plugin-aws-ses": "0.0.1",
     "watchmen-plugin-console": "0.2.0",
     "watchmen-ping-http-contains-headers": "0.0.3",
-    "watchmen-ping-http-head-headers": "0.0.3"
+    "watchmen-ping-http-head-headers": "0.0.3",
+    "watchmen-ping-http-contains-post": "0.0.2"
   },
   "devDependencies": {
     "assert": "^1.3.0",
